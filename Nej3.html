@@ -10,16 +10,32 @@
     </head>
     <body>
         <div class="container">
-            <div class="tenor-gif-embed" data-postid="15974530976611222074" data-share-method="host" data-aspect-ratio="1.26923" data-width="100%"><a href="https://tenor.com/view/peach-goma-phone-gif-15974530976611222074">Peach Goma Phone Sticker</a>from <a href="https://tenor.com/search/peach+goma-stickers">Peach Goma Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-            
+            <div class="tenor-gif-embed" data-postid="15974530976611222074" data-share-method="host"
+                data-aspect-ratio="1.26923" data-width="100%"><a
+                    href="https://tenor.com/view/peach-goma-phone-gif-15974530976611222074">Peach Goma Phone Sticker</a>from
+                <a href="https://tenor.com/search/peach+goma-stickers">Peach Goma Stickers</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    
             <h1>Då Får En Till Chans 😡</h1>
             <p>Klicka På Knappen!!!</p>
-
+    
             <div class="btn">
                 <a href="Ja.html">Ja</a>
             </div>
+            <div class="btn">
+                <a id="nej">Nej</a>
+            </div>
         </div>
-
-        <script src="script.js"></script>
+    
+        <script>
+            const btn = document.querySelector("#nej");
+            btn.addEventListener("click", () => {
+                btn.style.position = "absolute";
+                btn.style.left = Math.floor(Math.random() * 100) + "%";
+                btn.style.top = Math.floor(Math.random() * 100) + "%";
+            });
+    
+        </script>
     </body>
 </html>
